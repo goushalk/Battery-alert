@@ -1,0 +1,30 @@
+[Unit]
+Description=Battery Checker Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /battery_alert.py
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/harish/.Xauthority
+WorkingDirectory=
+Restart=always
+User=harish
+Group=harish
+
+[Install]
+WantedBy=multi-user.target 
+[Unit]
+Description=Battery Checker Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/harish/study/bash/battery_install_script/Battery-alert-install-script/battery_alert.py
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/harish/.Xauthority
+WorkingDirectory=/home/harish/study/bash/battery_install_script/Battery-alert-install-script
+Restart=always
+User=harish
+Group=harish
+
+[Install]
+WantedBy=multi-user.target 
