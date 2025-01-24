@@ -4,7 +4,7 @@ import tkinter
 from tkinter import messagebox
 import time
 
-CHECK_INTERVAL = 60000  # 1 minute
+CHECK_INTERVAL = 300  # 1 minute
 
 window = tkinter.Tk()
 window.withdraw()  
